@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+{%load static%}
+<div class="card bg-dark text-white">
+  <img src="{% static 'img/pic.png' %}" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5  class="card-title">Hey, Its Me HARSH,</h5>
+    <h5 class = 'secline'>A Web Developer.</h5>
+  </div>
+</div>
+
+<h1 style='font-size:4vw;text-align:center; padding-top: 4%; font-family: fantasy;'>Here Are Some Of My Coded Projects.</h1>
+<div class="container">
+
+<h5 class="my-5 text-center" style="font-size:4vw;">__________________________________</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            {% load static %}
+            <img src={% static 'img/snkgm.png' %} height="230" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h3 style='text-align:center'>SNAKE GAME</h3>
+              <p class="card-text">This is a simple Snake Game made in Python by using the Pygame module. Just Eat the food at the coordinate point, but don't eat yourself!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a class="btn btn-outline-dark" href="/snakegame" role="button">View</a>          
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src={% static 'img/wtrgn.png' %} height="230" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h3 style='text-align:center;'>Snake Water Gun Game</h3>
+              <p class="card-text">Snake Water Gun This just like stone paper scissor. Both the players should keep the gestures simultaneously. The snake drinks the water, the gun shoots the snake, and gun has no effect on water.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-outline-dark" href="/wtrgn" role="button">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src={% static 'img/calc.jpg' %} height="230" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h3 style='text-align:center;'>CALCULATOR</h3>
+              <p class="card-text" >This is a basic Calculator made in Python with the help of Tkinter Framework. It can add, subtract, multiply, divide both whole and decimal numbers.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-outline-dark" href="/calc" role="button">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+<span style="text-align:center; display:block;">
+<a class="btn btn-primary" href="/codes" role="button">Show All Projects</a>
+</span>
+
+{% endblock body %}

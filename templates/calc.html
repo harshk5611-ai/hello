@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Calculator
+{% endblock title %}
+
+{% block body %}
+<h1 style='text-align:center; margin-top: 3%'>Here is the Code For Calculator Made in Tkinter.</h1>
+{% load static %}
+<center>
+    <a href="{% static 'codes/tkcalculator.py' %}">
+        <button style='margin-top: 4%' type="button" class="btn btn-success">Show Code</button>
+    </a>
+</center>
+{% endblock body %}
